@@ -1,0 +1,22 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Country</th>
+      <th>Year</th>
+      <th>NoofTeam</th>
+      <th>Venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let team of teams">
+      <td>{{team.id}}</td>
+      <td>{{team.country}}</td>
+      <td>{{team.year}}</td>
+      <td>{{team.noofteam}}</td>
+      <td>{{team.venue}}</td>
+      <td><a routerLink="/delete/{{team.venue}}">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+

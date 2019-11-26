@@ -1,0 +1,33 @@
+<form #myform="ngForm" (ngSubmit)="insert(myform)">
+  <legend>Add Record</legend>
+
+  <div class="form-group">
+    <label for="id">Id</label>
+    <input ngModel type="text" class="form-control" id="id" name="id" placeholder="Enter Id">
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <input ngModel type="text" class="form-control" id="country" name="country" placeholder="Enter Country">
+  </div>
+
+  <div class="form-group">
+    <label for="year">Year</label>
+    <input ngModel type="text" class="form-control" id="year" name="year" placeholder="Enter Year">
+  </div>
+
+  <div class="form-group">
+    <label for="noofteam">NooFTeam</label>
+    <input ngModel type="text" class="form-control" id="noofteam" name="noofteam" placeholder="Enter NooFTeam">
+  </div>
+
+  <div class="form-group">
+    <label for="venue">Venue</label>
+    <input ngModel type="text" class="form-control" id="venue" name="venue" placeholder="Enter Venue">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Add Record</button>
+
+  <button (click)="goToHome()" type="button" class="btn btn-primary">Go to Home</button>
+
+</form>
